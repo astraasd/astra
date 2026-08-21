@@ -1,0 +1,20 @@
+let row = 1;
+
+while (row <= 5) {
+    let space = 1;
+    let col = 1;
+    let hasil = "";
+
+    while (space <= 5 - row) {
+        hasil += " ";
+        space++;
+    }
+
+    while (col <= row) {
+        hasil += "*";
+        col++;
+    }
+
+    console.log(hasil);
+    row++;
+}
