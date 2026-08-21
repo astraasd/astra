@@ -1,0 +1,13 @@
+let rows = 5;
+
+while (rows >= 1) {
+    let i = 0;
+
+    while (i < rows) {
+        process.stdout.write("*");
+        i++;
+    }
+
+    console.log();
+    rows--;
+}
