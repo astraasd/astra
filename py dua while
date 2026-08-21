@@ -1,0 +1,16 @@
+row = 1
+
+while row <= 5:
+    space = 1
+    col = 1
+
+    while space <= 5 - row:
+        print(" ", end="")
+        space += 1
+
+    while col <= row:
+        print("*", end="")
+        col += 1
+
+    print()
+    row += 1
