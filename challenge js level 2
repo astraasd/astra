@@ -1,0 +1,9 @@
+function hitungTabungan(hari) {
+    let total = 0;
+    for (let h = 1; h <= hari; h++) {
+        total += (h % 2 === 1) ? 2000 : 5000;
+    }
+    return total;
+}
+
+console.log(hitungTabungan(3));
