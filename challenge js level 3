@@ -1,0 +1,8 @@
+function cekTilang(plat, tanggal) {
+    const platGenap = plat % 2 === 0;
+    const tanggalGenap = tanggal % 2 === 0;
+    return (platGenap === tanggalGenap) ? "AMAN" : "TILANG";
+}
+
+console.log(cekTilang(24, 12));
+console.log(cekTilang(13, 20));
