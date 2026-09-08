@@ -1,0 +1,10 @@
+def cekTilang(plat, tanggal):
+    platGenap = plat % 2 == 0
+    tanggalGenap = tanggal % 2 == 0
+    if platGenap == tanggalGenap:
+        return "AMAN"
+    else:
+        return "TILANG"
+
+print(cekTilang(24, 12))
+print(cekTilang(13, 20))
