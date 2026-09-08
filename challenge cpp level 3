@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string cekTilang(int plat, int tanggal) {
+    bool platGenap = (plat % 2 == 0);
+    bool tanggalGenap = (tanggal % 2 == 0);
+    if (platGenap == tanggalGenap)
+        return "AMAN";
+    else
+        return "TILANG";
+}
+
+int main() {
+    cout << cekTilang(24, 12) << endl;
+    cout << cekTilang(13, 20) << endl;
+}
