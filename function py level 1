@@ -1,0 +1,11 @@
+def sapa(nama):
+    print("Halo, " + nama + "!")
+
+def tambah(a, b):
+    return a + b
+
+sapa("Joy")
+sapa("Seulgi")
+
+hasil = tambah(5, 3)
+print("Hasil:", hasil)
