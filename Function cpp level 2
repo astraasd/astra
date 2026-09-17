@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+void cekGanjilGenap(int angka) {
+    if (angka % 2 == 0) {
+        cout << "Genap" << endl;
+    } else {
+        cout << "Ganjil" << endl;
+    }
+}
+
+int main() {
+    cekGanjilGenap(4);
+    cekGanjilGenap(7);
+    return 0;
+}
