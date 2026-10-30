@@ -1,0 +1,6 @@
+let tas = ["Pedang Kayu", "Perisai Besi"];
+tas.splice(0, 0, "Position Darah");
+tas.splice(2, 0, "Busur Panah");
+tas.pop();
+
+console.log("hasil akhir:", tas);
