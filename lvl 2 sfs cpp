@@ -1,0 +1,37 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+    vector<string> produk = {"Laptop", "Mouse", "Keyboard", "Monitor", "Headset"};
+
+    int idx = -1;
+    for (int i = 0; i < (int)produk.size(); i++) {
+        if (produk[i] == "Keyboard") {
+            idx = i;
+            break;
+        }
+    }
+
+    if (idx != -1) {
+        cout << "Produk \"Keyboard\" ditemukan di index ke-" << idx << "\n";
+    } else {
+        cout << "Produk \"Keyboard\" tidak ditemukan\n";
+    }
+
+    vector<string> produkPanjang;
+    for (const string& x : produk) {
+        if (x.length() > 5) {
+            produkPanjang.push_back(x);
+        }
+    }
+
+    cout << "Produk dengan panjang > 5: ";
+    for (const string& x : produkPanjang) {
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    return 0;
+}
