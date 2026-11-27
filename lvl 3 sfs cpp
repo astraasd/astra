@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> suhu = {-3, 5, 0, -12, 8, 15, -1, 22};
+
+    int idx = -1;
+    for (int i = 0; i < (int)suhu.size(); i++) {
+        if (suhu[i] == 0) {
+            idx = i;
+            break;
+        }
+    }
+
+    if (idx != -1) {
+        cout << "Suhu 0 ditemukan di index ke-" << idx << "\n";
+    } else {
+        cout << "Suhu 0 tidak ditemukan\n";
+    }
+
+    vector<int> suhuPositif;
+    for (int x : suhu) {
+        if (x > 0) {
+            suhuPositif.push_back(x);
+        }
+    }
+
+    cout << "Suhu positif: ";
+    for (int x : suhuPositif) {
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    return 0;
+}
