@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> nilai = {60, 85, 40, 90, 75, 50, 95};
+
+    int idx = -1;
+    for (int i = 0; i < (int)nilai.size(); i++) {
+        if (nilai[i] == 85) {
+            idx = i;
+            break;
+        }
+    }
+
+    if (idx != -1) {
+        cout << "Nilai 85 ditemukan di index ke-" << idx << "\n";
+    } else {
+        cout << "Nilai 85 tidak ditemukan\n";
+    }
+
+    vector<int> lulus;
+    for (int x : nilai) {
+        if (x >= 75) {
+            lulus.push_back(x);
+        }
+    }
+
+    cout << "Nilai lulus: ";
+    for (int x : lulus) {
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    return 0;
+}
