@@ -1,0 +1,11 @@
+const suhu = [-3, 5, 0, -12, 8, 15, -1, 22];
+
+const idx = suhu.indexOf(0);
+if (idx !== -1) {
+  console.log(`Suhu 0 ditemukan di index ke-${idx}`);
+} else {
+  console.log("Suhu 0 tidak ditemukan");
+}
+
+const suhuPositif = suhu.filter((x) => x > 0);
+console.log("Suhu positif:", suhuPositif);
