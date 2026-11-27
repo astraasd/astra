@@ -1,0 +1,10 @@
+nilai = [60, 85, 40, 90, 75, 50, 95]
+
+if 85 in nilai:
+    idx = nilai.index(85)
+    print(f"Nilai 85 ditemukan di index ke-{idx}")
+else:
+    print("Nilai 85 tidak ditemukan")
+
+lulus = [x for x in nilai if x >= 75]
+print("Nilai lulus:", lulus)
